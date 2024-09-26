@@ -449,6 +449,7 @@ ul li {
 
 .services .content:hover {
     background: #000000;
+    color: #ffffff;
     transition: all .3s ease;
 }
 
@@ -494,7 +495,11 @@ ul li {
     right: 0;
     opacity: 0.2;
 }
-
+.myicon{
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #000;
+}
 /* words */
 .words-section .content {
     background: #000000;
@@ -845,6 +850,15 @@ footer ul.social li a i {
     height: fit-content;
     cursor: pointer;
 }
+.cardvideoo{
+    border-radius: 8px;
+    border: 1px solid #415678;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    text-align: center;
+}
 .cardvideo:hover{
     background-color: #415678;
     transition: all .3s ease-in-out;
@@ -877,5 +891,66 @@ footer ul.social li a i {
 }
 .numberinput{
     height: 50px;
+    width: 280px;
+    padding: 20px;
 }
-/* zzzzzzzzzzzzz */
+@media (max-width:767px){
+    .numberinput{
+        width: 200px;
+    }
+    .mhide{
+        display: none;
+    }
+    .home-intro{
+        padding-top: 120px;
+    }
+}
+.new{
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    animation: blink-bg 1s infinite;
+}
+@keyframes blink-bg {
+    0% {
+        background-color: #f1f1f1;
+        color: #000;
+        border: 1px solid #000;
+    }
+    50% {
+        background-color: #000000;
+        color: white;
+    }
+    100% {
+        background-color: #f1f1f1;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
+.bold{
+    font-weight: 800;
+    color: #000000;
+}
+.stepsshop{
+    display: grid;
+    gap: 28px;
+    position: relative;
+}
+.sticky{
+    position: -webkit-sticky; /* Sticky for Safari */
+    position: sticky;
+    top: 100px;
+}
+.stepsshop .active{
+    background: linear-gradient(to right, rgba(35, 53, 78, 0.4) 10%, rgba(0, 0, 0, 0) 100%);
+    color: #000000;
+    border-left: 4px solid black;
+    padding: 15px;
+}
+.customheading{
+    background: linear-gradient(to right, rgba(35, 53, 78, 0.4) 10%, rgba(0, 0, 0, 0) 100%);
+    color: #000000;
+    border-left: 4px solid black;
+    padding: 15px;
+}
