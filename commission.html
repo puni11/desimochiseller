@@ -45,7 +45,7 @@
 						<a class="nav-link" href="policies.html">Policies</a>
 					</li>
 				</ul>
-				<button class="headbutton">Start Selling</button>
+				<a href="https://vendor.desimochi.com/dashboard" class="headbutton">Start Selling</a>
 			</div>
 		</div>
 	</nav>
@@ -60,9 +60,15 @@
 						<h2 class="bold">Pricing and Comission</h2>
 						<p>DesiMochi charges <span class="bold">0% Commission rate</span> across all categories making it the most profitable platform for you to sell online.</p>
 						<p><span class="new">New</span> Don't have a GSTIN or have a Composition GSTIN? You can still sell on DesiMochi.  <span class="bold">Click here</span> to know more.</p>
-                        <ul style="margin-left: -15px;">
-							<li><input type="number" class="numberinput" placeholder="Enter Mobile Number"/> <a href="" class="headbutton">Start Selling</a></li>
-						</ul>
+						<form id="mobileForm">
+                            <ul style="margin-left: -15px;">
+                                <li>
+                                    <input type="number" id="mobileNumber" class="numberinput" placeholder="Enter Mobile Number" />
+                                    <a href="#" id="submitForm" class="headbutton">Start Selling</a>
+                                    <span id="errorMessage" style="color:red; display:none;">Please enter a valid 10-digit mobile number.</span>
+                                </li>
+                            </ul>
+                        </form>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -173,7 +179,7 @@
 	<!-- end words -->
 
 	<!-- news -->
-	<div id="news" class="news section-bottom-only">
+	<div id="news" class="news section-bottom-only mt-4">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
@@ -181,7 +187,7 @@
 						<h5 class="title-top">Seller Help</h5>
 						<h3>Latest Post</h3>
 						<div class="title-desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat nobis impedit, distinctio eius cupiditate doloribus labore sunt totam!</p>
+							<p>Read our detailed article which will make your life as Desimochi seller easiner and profitable...</p>
 						</div>
 					</div>
 				</div>
@@ -191,7 +197,7 @@
 							<a href="">
 								<div class="content">
 									<h4>10 Ways to Increase Your Visibility of Online Store</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
+									<p>Here are 10 proven ways which will help you in increasing the Visibility of the store and products ...</p>
 								</div>
 							</a>
 						</div>
@@ -199,7 +205,7 @@
 							<a href="">
 								<div class="content">
 									<h4>Perfect Shoe Cataloge for the Wholeseller</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
+									<p>Design a perfect shoe catalouge for your brands to attracts more customer</p>
 								</div>
 							</a>
 						</div>
@@ -221,7 +227,7 @@
 					<div class="content">
 						<div class="brand"><img src="https://www.desimochi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdesimochi-Logo-1.6587f620.png&w=96&q=75" alt="desimochi logo"></div>
 						<p>Step into Style with India's Best Multivendor Shoe Marketplace, Comfort Meets Fashion</p>
-						<button class="footerbutton">Start Selling</button>
+						<a href="https://vendor.desimochi.com/dashboard"><button class="footerbutton">Start Selling</button></a>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
@@ -230,7 +236,7 @@
 						<ul>
 							<li><a href="commission.html"><i class="icon ion-ios-contact"></i> Pricing and Commission</a></li>
 							<li><a href="onboarding-process.html"><i class="icon ion-ios-chatboxes"></i> Detailed Onboaring Process</a></li>
-							<li><a href=""><i class="icon ion-ios-chatboxes"></i> Shipping and Returns</a></li>
+							<li><a href="policies.html"><i class="icon ion-ios-chatboxes"></i> Policies</a></li>
 							<li><a href="https://www.desimochi.com/"><i class="icon ion-ios-list"></i> DesiMochi</a></li>
 
 						</ul>
@@ -270,42 +276,9 @@
 	<!-- script -->
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.filterizr.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/contact-form.js"></script>
 	<script src="js/main.js"></script>
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.content-section');
-  const headings = document.querySelectorAll('.sidebar-heading');
-
-  // Set the first heading as active on page load
-  if (headings.length > 0) {
-    headings[0].classList.add('active');
-  }
-
-  const options = {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px 0px -600px 0px', // Trigger when the section is 300px from the top of the viewport
-    threshold: 0 // Trigger as soon as the section reaches 300px from the top
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        headings.forEach(heading => heading.classList.remove('active'));
-        
-        const index = Array.from(sections).indexOf(entry.target);
-        headings[index].classList.add('active');
-      }
-    });
-  }, options);
-
-  sections.forEach(section => observer.observe(section));
-});
-
-    </script>
 
 </body>
 </html>

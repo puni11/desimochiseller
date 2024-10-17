@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Learn How to Sell on DesiMochi</title>
+	<title>Know about the Policies of DesiMochi</title>
 	<link rel="icon" href="images/favicon.png">
 
 	<!-- font -->
@@ -45,7 +45,7 @@
 						<a class="nav-link" href="policies.html">Policies</a>
 					</li>
 				</ul>
-				<button class="headbutton">Start Selling</button>
+				<a href="https://vendor.desimochi.com/dashboard" class="headbutton">Start Selling</a>
 			</div>
 		</div>
 	</nav>
@@ -61,9 +61,15 @@
 						<h2>Desimochi.com</h2>
 						<p>Become a Desimochi seller and join the community of <span class="bold">Shoe sellers</span> who are growing their business everyday</p>
 						<p><span class="new">New</span> Don't have a GSTIN or have a Composition GSTIN? You can still sell on DesiMochi.  <span class="bold">Click here</span> to know more.</p>
-                        <ul style="margin-left: -15px;">
-							<li><input type="number" class="numberinput" placeholder="Enter Mobile Number"/> <a href="" class="headbutton">Start Selling</a></li>
-						</ul>
+                        <form id="mobileForm">
+                            <ul style="margin-left: -15px;">
+                                <li>
+                                    <input type="number" id="mobileNumber" class="numberinput" placeholder="Enter Mobile Number" />
+                                    <a href="#" id="submitForm" class="headbutton">Start Selling</a>
+                                    <span id="errorMessage" style="color:red; display:none;">Please enter a valid 10-digit mobile number.</span>
+                                </li>
+                            </ul>
+                        </form>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -86,55 +92,103 @@
                     
                         <div class="sticky">
                             <div class="stepsshop">
-                        <h6 id="heading1" class="sidebar-heading">Get Started</h6>
-                        <h6  id="heading2" class="sidebar-heading">Create a Seller Account</h6>
-                        <h6 id="heading3" class="sidebar-heading">Products Listing</h6>
-                        <h6 id="heading4" class="sidebar-heading">Fulfillment and Shipping</h6>
-                        <h6 id="heading5" class="sidebar-heading">Delivery and Payments</h6>
-                        <h6 id="heading6" class="sidebar-heading">Customer Service Guidelines</h6>
+                        <h6 id="heading1" class="sidebar-heading">Onboarding Requirement</h6>
+                        <h6  id="heading2" class="sidebar-heading">How You Get Payment?</h6>
+                        <h6 id="heading3" class="sidebar-heading">Return & Replacement</h6>
+                        <h6 id="heading4" class="sidebar-heading">What Can Be Sold on Desimochi?</h6>
+                        <h6 id="heading5" class="sidebar-heading">Privacy and Protecting Personal Information</h6>
+                        <h6 id="heading6" class="sidebar-heading">What Not to Do on Desimochi Seller Account?</h6>
+                        
+                        <h6 id="heading7" class="sidebar-heading">Closing Seller Account</h6>
                     </div>
                     </div>
                    
                 </div>
                 <div class="col-md-9" id="#right_column">
                 <div id="section1" class="content-section">
-                    <h3 class="customheading">How do I pay for a Desi Mochi purchase?</h3>
-                    <p class="mt-3">We are excited to welcome you into our community of amazing sellers. Desimochi is your direct connection to millions of happy customers eager to discover unique and special products, just like yours.</p>
-                        <p>Getting started is easy! We will walk you through your seller account setup and product listing step by step. We'll make the process smooth and hassle-free for you. Therefore, let your creativity out and show your talent, and just look at how your business will grow!</p>
-                        <p> Now before you start selling, you need to have all your details and documents handy. Here is the checklist of all that is required to start registering as a Deshi Mochi seller :</p>
-                        
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <div class="serv-icon">
-                                    <i class="icon ion-ios-call"></i>
-                                    <span class="clone-icon"><i class="icon ion-ios-call"></i></span>
-                                </div>
-                                <h6>Mobile and Email</h6>
-                            </div>
+                    <h3 class="customheading">Onboarding Requirement?</h3>
+                    <ul class="mt-4">
+                        <li><span class="circle-list"></span> Visit the Desi Mochi website</li>
+                        <li><span class="circle-list"></span>  on the <i><span class="bold">"BECOME A SELLER”</span></i> button</li>
+                        <li><span class="circle-list"></span> Fill in the required information fields on the registration form. This includes: Name, Mobile Number, Email Address and Password</li>
+                        <li><span class="circle-list"></span> Verify with OTP </li>
+                        <li><span class="circle-list"></span> After verification with OTP from Email and Phone number Follow the on-screen instructions</li>
+                    </ul>
+                    <div class="row mt-4 mb-4">
+                        <div class="col-md-4">
+                            <h6 class="bold mb-2">Required Company Details</h6>
+                            <ul>
+                                <li><span class="circle-list"></span> Company Name</li>
+                                <li><span class="circle-list"></span> Company Email</li>
+                                <li><span class="circle-list"></span> Website Link</li>
+                                <li><span class="circle-list"></span> Phone Number</li>
+                                <li><span class="circle-list"></span> GST Number</li>
+                                <li><span class="circle-list"></span> PAN Number</li>
+                                <li><span class="circle-list"></span> Address</li>
+                                <li><span class="circle-list"></span> Logo</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <div class="serv-icon">
-                                    <i class="icon ion-ios-card"></i>
-                                    <span class="clone-icon"><i class="icon ion-ios-card"></i></span>
-                                </div>
-                                <h6>GST Number or PAN Card</h6>
-                            </div>
+                        <div class="col-md-4">
+                            <h6 class="bold mb-2">Contact Person Details</h6>
+                            <ul>
+                                <li><span class="circle-list"></span> Name</li>
+                                <li><span class="circle-list"></span> Email</li>
+                                <li><span class="circle-list"></span> Phone Number</li>
+                                <li><span class="circle-list"></span> Designation</li>
+                                <li><span class="circle-list"></span> PAN Number</li>
+                                <li><span class="circle-list"></span> Name</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <div class="serv-icon">
-                                    <i class="icon ion-ios-cash"></i>
-                                    <span class="clone-icon"><i class="icon ion-ios-cash"></i></span>
-                                </div>
-                                <h6>Active Bank Account</h6>
-                            </div>
+                        <div class="col-md-4">
+                            <h6 class="bold mb-2">Business &amp; Bank Details</h6>
+                            <ul>
+                                <li><span class="circle-list"></span> Return Policy</li>
+                                <li><span class="circle-list"></span> Return Days</li>
+                                <li><span class="circle-list"></span> Replace Policy</li>
+                                <li><span class="circle-list"></span> Replace Days</li>
+                                <li><span class="circle-list"></span> Bank Name Number</li>
+                                <li><span class="circle-list"></span> Bank Account Number</li>
+                                <li><span class="circle-list"></span> Bank IFSC Code</li>
+                            </ul>
                         </div>
                     </div>
+                    <h6 class="bold mb-2">Required Company Documents</h6>
+                    <div class="row mt-4 mb-4">
+                        
+                        <div class="col-md-3">
+                           
+                            <ul>
+                                <li><span class="circle-list"></span> GST Registration</li>
+                                <li><span class="circle-list"></span> Company Registration Document</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                           
+                            <ul>
+                                <li><span class="circle-list"></span> Contact Person Adhar Card</li>
+                                <li><span class="circle-list"></span> Contact Person PAN Card</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                           
+                            <ul>
+                                <li><span class="circle-list"></span> Company PAN Card</li>
+                                <li><span class="circle-list"></span>Cancel Cheque</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                           
+                            <ul>
+                                <li><span class="circle-list"></span> Trademark Certificate</li>
+                                <li><span class="circle-list"></span> Signature</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="mb-2 redline"><span class="circle-list"></span> For Brand Registration Seller need Brand Approval letter from the parent company.</h6>
+                    <h6 class="mb-5 redline"><span class="circle-list"></span> Add an Address for the Business which will be publically visible and add warehouse address for pickup and drop.</h6>
                 </div>
                 <div id="section2" class="content-section mt-5">
-                    <h3 class="customheading">Create a Seller Account</h3>
+                    <h3 class="customheading">How You Get Payment?</h3>
                     <ul class="mt-4">
                         <li><span class="circle-list"></span> Visit the Desi Mochi website</li>
                         <li><span class="circle-list"></span>  on the <i><span class="bold">"BECOME A SELLER”</span></i> button</li>
@@ -216,102 +270,133 @@
                     <h6 class="mb-5 redline"><span class="circle-list"></span> Add an Address for the Business which will be publically visible and add warehouse address for pickup and drop.</h6>
                 </div>
                 <div id="section3" class="content-section">
-                    <h3 class="customheading">Products Listing</h3>
-                    <p class="mt-3">A product listing on Desi Mochi is like your shop window for millions of potential customers. It's a detailed description of your item, complete with images, specifications, and pricing information. A well-crafted listing can attract buyers and increase your sales.</p>
-                    <ul class="mt-4 mb-4">
-                        <li><span class="circle-list"></span> <strong>Product Name:</strong> Tell people what your product is.</li>
-                        <li><span class="circle-list"></span> <strong>Product Description:</strong> Explain what your product does and why it's great.</li>
-                        <li><span class="circle-list"></span> <strong>High-Quality Pictures:</strong> Show your product from all angles.</li>
-                        <li><span class="circle-list"></span> <strong>Product Price:</strong> Check other similar products to set a good price.</li>
-                        <li><span class="circle-list"></span> <strong>Details:</strong> Give information like size, color, and material.</li>
+                    <h3 class="customheading">Return & Replacement</h3>
+                    <p class="mt-3">Here are the key points on Desimochi’s return and replacement policy for sellers:
+                    </p>
+                    <h6>1. Eligibility for Return and Replacement:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> Defective or damaged products: Products with manufacturing defects or damages during delivery are eligible for return or replacement.</li>
+                        <li><span class="circle-list"></span> Wrong item delivered: If a customer receives the wrong product (wrong size, color, or model), they can request a return or replacement.</li>
+                        <li><span class="circle-list"></span> Size or fit issues: Shoes that do not fit the customer as expected can be returned, provided they are unworn and in their original packaging.</li>
+                
                     </ul>
+                    <h6>2. Timeframe for Returns:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> Customers typically have a 7 day window to initiate a return or request a replacement, depending on the specific terms set by Desimochi.</li>
+                        <li><span class="circle-list"></span> Sellers must honor returns within the stipulated time, and any delays in processing may result in penalties or negative ratings.</li>
+                
+                    </ul>
+                    <h6>3. Condition for Accepted Returns:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> The returned product must be in unused condition with original tags, packaging, and any accessories included.</li>
+                        <li><span class="circle-list"></span>Damaged or heavily worn shoes will not be accepted unless the defect was caused by the manufacturer or delivery process.</li>
+                        
+                    </ul>
+                    <h6>4. Return Shipping Costs:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> For defective or incorrect products, the return shipping costs are typically covered by the seller.</li>
+                        <li><span class="circle-list"></span>For size exchanges or customer-initiated returns, the customer may be responsible for return shipping, depending on the seller’s policy.</li>
+                        
+                    </ul>
+                    <h6>5. Refund Process:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> Once the returned item is received and inspected by the seller, a full refund or store credit is issued to the customer.</li>
+                        <li><span class="circle-list"></span> Refunds should be processed promptly within 7-10 business days after receiving the returned item.</li>
+                        
+                    </ul>
+                    <h6>6. Replacements:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> If a replacement is requested, the seller must dispatch the correct item within the agreed timeframe after receiving the returned product.</li>
+                        <li><span class="circle-list"></span> The replacement item should be identical to the original, unless agreed otherwise (such as a different size or color).
+                        </li>
+                       
+                
+                    </ul>
+                    <h6>7. Non-returnable Items:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> Some items, like custom-made or heavily discounted shoes, may be marked as non-returnable if stated clearly in the product listing.</li>
+                
+                    </ul>
+                    <h6>8. Communication and Customer Support:</h6>
+                    <ul class="mt-2 mb-4">
+                        <li><span class="circle-list"></span> Sellers are required to maintain clear communication with customers during the return and replacement process to ensure customer satisfaction and trust.</li>
+                   </ul>
 
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class=" content">
-                                <h6>Shop Act</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <h6>Business Registration</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <h6>PAN Card - Company</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <h6>Cancel Cheque</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <h6>Trademark Certificate</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="content">
-                                <h6>Signature</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="content">
-                                <h6>Adhar Card Contact Person</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="content">
-                                <h6>Contact Person PAN Card</h6>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div id="section4" class="content-section mt-4">
-                    <h3 class="customheading">Fulfillment and Shipping</h3>
-                    <p class="mt-3">Fulfillment includes order processing, Inventory Management, Packaging, Shipping, and tracking. Fulfillment by Desi Mochi (FBD): Desi Mochi will ship products on behalf of the seller.
+                    <h3 class="customheading">What Can Be Sold on Desimochi?</h3>
+                    <p class="mt-3">On Desimochi, sellers are allowed to sell the following types of products:
                         </p>
-                    <h5 class="mt-4 mb-2">Packaging and Shipping Guidelines</h5>
+                    <h5 class="mt-4 mb-2">Footwear</h5>
                     <ul class="mb-5">
-                        <li><span class="circle-list"></span> Use sturdy boxes or envelopes that can withstand handling and shipping conditions.</li>
-                        <li><span class="circle-list"></span> Add cushioning materials like bubble wrap or packing peanuts to prevent damage during transit.</li>
-                        <li><span class="circle-list"></span> Clearly label the package with the recipient's name, address, and order number.</li>
-                        <li><span class="circle-list"></span> Make sure the package meets the carrier's weight and dimension requirements.</li>
-                        <li><span class="circle-list"></span> Use appropriate packaging for fragile items and mark them as "Fragile."</li>
-                        <li><span class="circle-list"></span> Follow regulations for shipping unsafe materials, if applicable.</li>
-                        <li><span class="circle-list"></span> Adhere to the specific packaging guidelines of the shipping carrier you choose.</li>
-                        <li><span class="circle-list"></span> Consider purchasing shipping insurance to protect against losses or damages.</li>
+                        <li><span class="circle-list"></span> Casual shoes (sneakers, loafers, etc.)</li>
+                        <li><span class="circle-list"></span> Casual shoes (sneakers, loafers, etc.) </li>
+                        <li><span class="circle-list"></span> Sports shoes (running shoes, trainers, athletic footwear)</li>
+                        <li><span class="circle-list"></span> Sandals and slippers (flip-flops, open-toe sandals, slides)</li>
+                        <li><span class="circle-list"></span> Boots (ankle boots, knee-high boots, hiking boots)                        </li>
                     </ul>
-                </div>
-                <div id="section5" class="content-section">
-                    <h3 class="customheading">Delivery and Payments</h3>
-                    <p class="mt-3">When you receive an order for your product, you are notified via email. You can also check the order update on the Desi Mochi Seller panel.</p>
-                    <ul class="mt-3 mb-3">
-                        <li><span class="circle-list"></span> Accepting the order</li>
-                        <li><span class="circle-list"></span> Receive payment for the product. </li>
-                        <li><span class="circle-list"></span> Send Invoice to the customer. </li>
+                    <h5 class="mt-4 mb-2">Footwear Accessories:</h5>
+                    <ul class="mb-5">
+                        <li><span class="circle-list"></span> Insoles and inserts (comfort, orthopedic, arch support)</li>
+                        <li><span class="circle-list"></span>Insoles and inserts (comfort, orthopedic, arch support) </li>
+                        <li><span class="circle-list"></span> Shoe laces (various styles and lengths)</li>
+                        <li><span class="circle-list"></span> Shoe bags and storage solutions</li>
                     </ul>
-                    <p class="mb-5">Desi Mochi ensures timely payments directly into your registered bank account, which you provided during the Desi Mochi account creation process. You can receive your payments as fast as 7 days from the date of dispatch. You can view your deposited balance and future payments on the Desi Mochi Seller Dashboard.</p>
+                    <h6 class="mt-4 mb-2"><span class="circle-list"></span>Branded Footwear: Shoes directly sourced from popular, well-established brands or authorized distributors.</h6>
+                    <h6 class="mt-4 mb-2"><span class="circle-list"></span>Custom-made or Designer Shoes: Unique, handcrafted, or designer shoes, provided they comply with authenticity and quality standards.</h6>
                 </div>
-                <div id="section6" class="content-section">
-                    <h3 class="customheading">Customer Service Guidelines</h3>
+                <div id="section5" class="content-section mt-4 ">
+                    <h3 class="customheading">Privacy and Protecting Personal Information</h3>
+                   
+                        <li><span class="circle-list"></span> Collecting only necessary information: Sellers should collect only the essential personal information needed to process orders, such as shipping addresses and contact details, and avoid asking for unnecessary details.</li>
+                        <li><span class="circle-list"></span> Protecting customer data: Sellers must implement appropriate security measures (e.g., encryption, secure servers) to protect customers' personal data from unauthorized access, breaches, or cyberattacks.
+
+                        </li>
+                        <li><span class="circle-list"></span> Not sharing customer information: Sellers are not allowed to share, sell, or distribute customers' personal information with third parties without explicit consent, except for shipping or payment processing purposes.</li>
+                        <li><span class="circle-list"></span>Respecting user privacy preferences: Sellers must comply with customer preferences regarding communication, marketing, and how their data is handled. Opt-in mechanisms should be used for promotional communications.</li>
+                        <li><span class="circle-list"></span>Compliance with privacy laws: Sellers must adhere to data protection regulations such as GDPR or local laws governing customer privacy and data usage. Ensure transparency about how data is collected, used, and stored.</li>
+                        <li><span class="circle-list"></span>Deleting customer data upon request: If a customer requests their personal information to be deleted after a transaction, sellers must comply promptly and ensure the data is permanently erased from their systems.</li>
+                        <li><span class="circle-list"></span>Secure payment processing: Sellers should use trusted payment gateways to ensure that customers' financial data is processed securely and is not stored or misused.</li>
+                    </ul>
+                   
+                </div>
+                <div id="section6" class="content-section mt-3">
+                    <h3 class="customheading">What Not to Do on Desimochi Seller Account?</h3>
+                    <p>Here are some points to guide sellers on what they are not allowed to do on Desimochi,</p>
                     <ul class="mt-4">
-                        <li><span class="circle-list"></span> Respond to customer inquiries and concerns as soon as possible.</li>
-                        <li><span class="circle-list"></span> Use clear and concise language when communicating with customers.</li>
-                        <li><span class="circle-list"></span> Actively work to resolve customer issues and concerns.</li>
-                        <li><span class="circle-list"></span> Show empathy and understanding towards customer frustrations.</li>
-                        <li><span class="circle-list"></span> Maintain a positive and helpful attitude, even in challenging situations.</li>
-                        <li><span class="circle-list"></span> Follow up with customers to ensure their issues have been resolved.</li>
-                        <li><span class="circle-list"></span> Encourage customer feedback and use it to improve your service.</li>
-                        <li><span class="circle-list"></span> Provide ongoing training to customer service representatives.</li>
-                        <li><span class="circle-list"></span> Use customer service tools like help desks and live chat to improve efficiency.</li>
-                        <li><span class="circle-list"></span> Communicate your customer service policies and procedures.</li>
+                        <li><span class="circle-list"></span> Selling counterfeit products: Sellers must not offer counterfeit or imitation products. All shoes must be authentic and sourced directly from the brand or authorized distributors.</li>
+                        <li><span class="circle-list"></span> Violating pricing policies: Sellers are not allowed to set prices significantly higher than the market standard or engage in price gouging. Competitive and fair pricing is required.</li>
+                        <li><span class="circle-list"></span> Posting misleading product descriptions: Sellers must not provide false or exaggerated information in product descriptions, such as fabricating shoe features, quality, or brand origin.</li>
+                        <li><span class="circle-list"></span> Failing to adhere to shipping and delivery commitments: Delays in dispatching products beyond the listed shipping timeframe without customer communication or valid reasons are prohibited.</li>
+                        <li><span class="circle-list"></span> Offering non-shoe products: Desimochi is focused on footwear. Sellers must not list unrelated products like clothing, accessories, or other non-footwear items.</li>
+                        <li><span class="circle-list"></span> Infringing on another seller’s intellectual property: Using copyrighted images, brand logos, or descriptions from other sellers without permission is strictly prohibited.</li>
+                        <li><span class="circle-list"></span> Abusing customer reviews: Manipulating product reviews, either by posting fake positive reviews or sabotaging competitors with false negative reviews, is not allowed.</li>
+                        <li><span class="circle-list"></span> Breach of Desimochi's return policies: Refusing to honor the platform’s return and refund policies without proper cause is a violation.</li>
+                       
+                    </ul>
+                </div>
+                <div id="section7" class="content-section mt-5">
+                    <h3 class="customheading">Closing Seller Account</h3>
+                    <p class="mt-3">Request Closure of your account and deletion of your personal information. You can submit a request to permanently close your Desi Mochi account and have your data deleted.</p>
+                    <ul class="mt-4">
+                        <li><span class="circle-list"></span> Go to the "Close Your Desi Mochi Account" page. You can usually find this link in your vendor panel settings or on the Desi Mochi website's main page.</li>
+                        <li><span class="circle-list"></span> Sign in to the account you want to close. Enter your email address and password.</li>
+                        <li><span class="circle-list"></span> Review your account details. Make sure you're closing the correct account. Check the products and services associated with it.</li>
+                        <li><span class="circle-list"></span> Choose a reason for closing your account. Select the option that best describes why you're closing your account from the drop-down menu.</li>
+                        <li><span class="circle-list"></span> Confirm your decision. Check the box next to "Yes, I want to permanently close my Desi Mochi account and delete my data."</li>
+                        <li><span class="circle-list"></span> Click "Close my Account." This will initiate the process of closing your account and deleting your personal information.</li>
+            
+                    </ul>
+                    <h4 class="mt-4">Important Notes:</h4>
+                    <ul class="mt-2">
+                        <li><span class="circle-list"></span>If you have more than one Desi Mochi account, repeat these steps for each account you want to close.</li>
+                        <li><span class="circle-list"></span>We'll send a confirmation email or text message to the address associated with your account. You must reply within 5 days to verify your request.</li>
+                    </ul>
+                    <h4 class="mt-4">What happens after closing your account:</h4>
+                    <ul class="mt-2">
+                        <li><span class="circle-list"></span>Your account will be permanently closed, and you won't be able to access it anymore.</li>
+                        <li><span class="circle-list"></span>Your personal information will be deleted from our systems.</li>
+                        <li><span class="circle-list"></span>If you decide to use Desi Mochi again in the future, you'll need to create a new account.</li>
                     </ul>
                 </div>
                 </div>
@@ -406,7 +491,7 @@
 						<h5 class="title-top">Seller Help</h5>
 						<h3>Latest Post</h3>
 						<div class="title-desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat nobis impedit, distinctio eius cupiditate doloribus labore sunt totam!</p>
+							<p>Read our detailed article which will make your life as Desimochi seller easiner and profitable...</p>
 						</div>
 					</div>
 				</div>
@@ -416,7 +501,7 @@
 							<a href="">
 								<div class="content">
 									<h4>10 Ways to Increase Your Visibility of Online Store</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
+									<p>Here are 10 proven ways which will help you in increasing the Visibility of the store and products ...</p>
 								</div>
 							</a>
 						</div>
@@ -424,7 +509,7 @@
 							<a href="">
 								<div class="content">
 									<h4>Perfect Shoe Cataloge for the Wholeseller</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
+									<p>Design a perfect shoe catalouge for your brands to attracts more customer</p>
 								</div>
 							</a>
 						</div>
@@ -439,14 +524,14 @@
 	<!-- end contact -->
 
 	<!-- footer -->
-	<footer>
+    <footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="content">
 						<div class="brand"><img src="https://www.desimochi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdesimochi-Logo-1.6587f620.png&w=96&q=75" alt="desimochi logo"></div>
 						<p>Step into Style with India's Best Multivendor Shoe Marketplace, Comfort Meets Fashion</p>
-						<button class="footerbutton">Start Selling</button>
+						<a href="https://vendor.desimochi.com/dashboard"><button class="footerbutton">Start Selling</button></a>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
@@ -455,7 +540,7 @@
 						<ul>
 							<li><a href="commission.html"><i class="icon ion-ios-contact"></i> Pricing and Commission</a></li>
 							<li><a href="onboarding-process.html"><i class="icon ion-ios-chatboxes"></i> Detailed Onboaring Process</a></li>
-							<li><a href=""><i class="icon ion-ios-chatboxes"></i> Shipping and Returns</a></li>
+							<li><a href="policies.html"><i class="icon ion-ios-chatboxes"></i> Policies</a></li>
 							<li><a href="https://www.desimochi.com/"><i class="icon ion-ios-list"></i> DesiMochi</a></li>
 
 						</ul>
@@ -495,10 +580,8 @@
 	<!-- script -->
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.filterizr.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/contact-form.js"></script>
+    <script src="js/contact-form.js"></script>
 	<script src="js/main.js"></script>
     <script>
 document.addEventListener('DOMContentLoaded', () => {
